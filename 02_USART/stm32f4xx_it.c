@@ -100,7 +100,7 @@ __attribute__((weak)) void SysTick_Handler(void)
 }
 
 
-#define MAX_WORDLEN 10
+/*#define MAX_WORDLEN 10
 volatile char received_str[MAX_WORDLEN + 1];
 extern void USART_puts(USART_TypeDef *USARTx, volatile char *str);
 
@@ -124,7 +124,7 @@ void USART2_IRQHandler(void){
     }
   }
 
-}
+}*/
 
 
 
