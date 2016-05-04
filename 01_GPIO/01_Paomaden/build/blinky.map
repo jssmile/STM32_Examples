@@ -1,0 +1,612 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+                              /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o (RCC_AHB1PeriphClockCmd)
+/home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+                              /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o (GPIO_Init)
+
+Allocating common symbols
+Common symbol       size              file
+
+msTicks             0x4               /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+ .bss           0x0000000000000000        0x0 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+ .data          0x0000000000000000        0x0 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+ .bss           0x0000000000000000        0x0 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+ .data          0x0000000000000000        0x0 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/stm32f4xx_it.o
+ .bss           0x0000000000000000        0x0 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/stm32f4xx_it.o
+ .bss           0x0000000000000000        0x0 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/system_stm32f4xx.o
+ .bss           0x0000000000000000        0x0 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ .data          0x0000000000000000        0x0 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+ .bss           0x0000000000000000        0x0 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x0000000008000000 0x0000000000100000 xr
+RAM              0x0000000020000000 0x0000000000020000 xrw
+CCM              0x0000000010000000 0x0000000000010000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+LOAD /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+LOAD /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/stm32f4xx_it.o
+LOAD /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/system_stm32f4xx.o
+LOAD /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.8/../../../arm-none-eabi/lib/armv7e-m/libc_nano.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.8/armv7e-m/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.8/../../../arm-none-eabi/lib/armv7e-m/libnosys.a
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/4.8/armv7e-m/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.8/../../../arm-none-eabi/lib/armv7e-m/libc_nano.a
+END GROUP
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/4.8/armv7e-m/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.8/../../../arm-none-eabi/lib/armv7e-m/libc_nano.a
+END GROUP
+                0x0000000020020000                _estack = 0x20020000
+                0x0000000000000000                _Min_Heap_Size = 0x0
+                0x0000000000000400                _Min_Stack_Size = 0x400
+
+.isr_vector     0x0000000008000000      0x188
+                0x0000000008000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x0000000008000000      0x188 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+                0x0000000008000000                g_pfnVectors
+                0x0000000008000188                . = ALIGN (0x4)
+
+.text           0x0000000008000188      0xb18
+                0x0000000008000188                . = ALIGN (0x4)
+ *(.text)
+ .text          0x0000000008000188       0x70 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+                0x0000000008000188                RTC_Alarm_IRQHandler
+                0x0000000008000188                HASH_RNG_IRQHandler
+                0x0000000008000188                EXTI2_IRQHandler
+                0x0000000008000188                TIM8_CC_IRQHandler
+                0x0000000008000188                DebugMon_Handler
+                0x0000000008000188                TIM1_CC_IRQHandler
+                0x0000000008000188                DMA2_Stream5_IRQHandler
+                0x0000000008000188                DMA1_Stream5_IRQHandler
+                0x0000000008000188                PVD_IRQHandler
+                0x0000000008000188                SDIO_IRQHandler
+                0x0000000008000188                TAMP_STAMP_IRQHandler
+                0x0000000008000188                PendSV_Handler
+                0x0000000008000188                CAN2_RX1_IRQHandler
+                0x0000000008000188                EXTI3_IRQHandler
+                0x0000000008000188                TIM8_TRG_COM_TIM14_IRQHandler
+                0x0000000008000188                TIM1_UP_TIM10_IRQHandler
+                0x0000000008000188                TIM8_UP_TIM13_IRQHandler
+                0x0000000008000188                I2C3_ER_IRQHandler
+                0x0000000008000188                EXTI0_IRQHandler
+                0x0000000008000188                I2C2_EV_IRQHandler
+                0x0000000008000188                DMA1_Stream2_IRQHandler
+                0x0000000008000188                CAN1_RX0_IRQHandler
+                0x0000000008000188                FPU_IRQHandler
+                0x0000000008000188                OTG_HS_WKUP_IRQHandler
+                0x0000000008000188                UsageFault_Handler
+                0x0000000008000188                CAN2_SCE_IRQHandler
+                0x0000000008000188                DMA2_Stream2_IRQHandler
+                0x0000000008000188                SPI1_IRQHandler
+                0x0000000008000188                TIM6_DAC_IRQHandler
+                0x0000000008000188                TIM1_BRK_TIM9_IRQHandler
+                0x0000000008000188                DCMI_IRQHandler
+                0x0000000008000188                CAN2_RX0_IRQHandler
+                0x0000000008000188                DMA2_Stream3_IRQHandler
+                0x0000000008000188                USART6_IRQHandler
+                0x0000000008000188                USART3_IRQHandler
+                0x0000000008000188                CRYP_IRQHandler
+                0x0000000008000188                CAN1_RX1_IRQHandler
+                0x0000000008000188                UART5_IRQHandler
+                0x0000000008000188                DMA2_Stream0_IRQHandler
+                0x0000000008000188                TIM4_IRQHandler
+                0x0000000008000188                I2C1_EV_IRQHandler
+                0x0000000008000188                DMA1_Stream6_IRQHandler
+                0x0000000008000188                DMA1_Stream1_IRQHandler
+                0x0000000008000188                UART4_IRQHandler
+                0x0000000008000188                TIM3_IRQHandler
+                0x0000000008000188                RCC_IRQHandler
+                0x0000000008000188                TIM8_BRK_TIM12_IRQHandler
+                0x0000000008000188                Default_Handler
+                0x0000000008000188                EXTI15_10_IRQHandler
+                0x0000000008000188                ADC_IRQHandler
+                0x0000000008000188                DMA1_Stream7_IRQHandler
+                0x0000000008000188                TIM7_IRQHandler
+                0x0000000008000188                CAN2_TX_IRQHandler
+                0x0000000008000188                TIM5_IRQHandler
+                0x0000000008000188                DMA2_Stream7_IRQHandler
+                0x0000000008000188                I2C3_EV_IRQHandler
+                0x0000000008000188                EXTI9_5_IRQHandler
+                0x0000000008000188                RTC_WKUP_IRQHandler
+                0x0000000008000188                ETH_WKUP_IRQHandler
+                0x0000000008000188                SPI2_IRQHandler
+                0x0000000008000188                OTG_HS_EP1_IN_IRQHandler
+                0x0000000008000188                MemManage_Handler
+                0x0000000008000188                DMA1_Stream0_IRQHandler
+                0x0000000008000188                CAN1_TX_IRQHandler
+                0x0000000008000188                SVC_Handler
+                0x0000000008000188                EXTI4_IRQHandler
+                0x0000000008000188                FSMC_IRQHandler
+                0x0000000008000188                ETH_IRQHandler
+                0x0000000008000188                OTG_HS_EP1_OUT_IRQHandler
+                0x0000000008000188                WWDG_IRQHandler
+                0x0000000008000188                TIM2_IRQHandler
+                0x0000000008000188                OTG_FS_WKUP_IRQHandler
+                0x0000000008000188                TIM1_TRG_COM_TIM11_IRQHandler
+                0x0000000008000188                OTG_HS_IRQHandler
+                0x0000000008000188                EXTI1_IRQHandler
+                0x0000000008000188                USART2_IRQHandler
+                0x0000000008000188                I2C2_ER_IRQHandler
+                0x0000000008000188                DMA2_Stream1_IRQHandler
+                0x0000000008000188                CAN1_SCE_IRQHandler
+                0x0000000008000188                FLASH_IRQHandler
+                0x0000000008000188                DMA2_Stream4_IRQHandler
+                0x0000000008000188                BusFault_Handler
+                0x0000000008000188                USART1_IRQHandler
+                0x0000000008000188                OTG_FS_IRQHandler
+                0x0000000008000188                SPI3_IRQHandler
+                0x0000000008000188                DMA1_Stream4_IRQHandler
+                0x0000000008000188                I2C1_ER_IRQHandler
+                0x0000000008000188                DMA2_Stream6_IRQHandler
+                0x0000000008000188                DMA1_Stream3_IRQHandler
+                0x000000000800018c                Reset_Handler
+ .text          0x00000000080001f8       0x8c /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+                0x00000000080001f8                SysTick_Handler
+                0x0000000008000208                setSysTick
+                0x000000000800024c                init_GPIO
+ .text          0x0000000008000284       0x24 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/stm32f4xx_it.o
+                0x0000000008000284                NMI_Handler
+                0x0000000008000288                HardFault_Handler
+ .text          0x00000000080002a8      0x158 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/system_stm32f4xx.o
+                0x00000000080002a8                SystemInit
+                0x0000000008000398                SystemCoreClockUpdate
+ .text          0x0000000008000400      0x53c /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+                0x0000000008000400                RCC_DeInit
+                0x0000000008000450                RCC_HSEConfig
+                0x0000000008000460                RCC_WaitForHSEStartUp
+                0x0000000008000498                RCC_AdjustHSICalibrationValue
+                0x00000000080004ac                RCC_HSICmd
+                0x00000000080004b8                RCC_LSEConfig
+                0x00000000080004d8                RCC_LSICmd
+                0x00000000080004e4                RCC_PLLConfig
+                0x0000000008000508                RCC_PLLCmd
+                0x0000000008000514                RCC_PLLI2SConfig
+                0x0000000008000528                RCC_PLLI2SCmd
+                0x0000000008000534                RCC_PLLSAIConfig
+                0x000000000800054c                RCC_PLLSAICmd
+                0x0000000008000558                RCC_ClockSecuritySystemCmd
+                0x0000000008000564                RCC_MCO1Config
+                0x0000000008000578                RCC_MCO2Config
+                0x000000000800058c                RCC_SYSCLKConfig
+                0x00000000080005a0                RCC_GetSYSCLKSource
+                0x00000000080005b0                RCC_HCLKConfig
+                0x00000000080005c4                RCC_PCLK1Config
+                0x00000000080005d8                RCC_PCLK2Config
+                0x00000000080005ec                RCC_GetClocksFreq
+                0x000000000800067c                RCC_RTCCLKConfig
+                0x00000000080006ac                RCC_RTCCLKCmd
+                0x00000000080006b8                RCC_BackupResetCmd
+                0x00000000080006c4                RCC_I2SCLKConfig
+                0x00000000080006d0                RCC_SAIPLLI2SClkDivConfig
+                0x00000000080006e8                RCC_SAIPLLSAIClkDivConfig
+                0x0000000008000704                RCC_SAIBlockACLKConfig
+                0x000000000800071c                RCC_SAIBlockBCLKConfig
+                0x0000000008000734                RCC_LTDCCLKDivConfig
+                0x000000000800074c                RCC_TIMCLKPresConfig
+                0x0000000008000758                RCC_AHB1PeriphClockCmd
+                0x0000000008000770                RCC_AHB2PeriphClockCmd
+                0x0000000008000788                RCC_AHB3PeriphClockCmd
+                0x00000000080007a0                RCC_APB1PeriphClockCmd
+                0x00000000080007b8                RCC_APB2PeriphClockCmd
+                0x00000000080007d0                RCC_AHB1PeriphResetCmd
+                0x00000000080007e8                RCC_AHB2PeriphResetCmd
+                0x0000000008000800                RCC_AHB3PeriphResetCmd
+                0x0000000008000818                RCC_APB1PeriphResetCmd
+                0x0000000008000830                RCC_APB2PeriphResetCmd
+                0x0000000008000848                RCC_AHB1PeriphClockLPModeCmd
+                0x0000000008000860                RCC_AHB2PeriphClockLPModeCmd
+                0x0000000008000878                RCC_AHB3PeriphClockLPModeCmd
+                0x0000000008000890                RCC_APB1PeriphClockLPModeCmd
+                0x00000000080008a8                RCC_APB2PeriphClockLPModeCmd
+                0x00000000080008c0                RCC_ITConfig
+                0x00000000080008d8                RCC_GetFlagStatus
+                0x000000000800090c                RCC_ClearFlag
+                0x000000000800091c                RCC_GetITStatus
+                0x0000000008000930                RCC_ClearITPendingBit
+ .text          0x000000000800093c      0x2c0 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+                0x000000000800093c                GPIO_DeInit
+                0x0000000008000a98                GPIO_Init
+                0x0000000008000b54                GPIO_StructInit
+                0x0000000008000b68                GPIO_PinLockConfig
+                0x0000000008000b8c                GPIO_ReadInputDataBit
+                0x0000000008000b98                GPIO_ReadInputData
+                0x0000000008000ba0                GPIO_ReadOutputDataBit
+                0x0000000008000bac                GPIO_ReadOutputData
+                0x0000000008000bb4                GPIO_SetBits
+                0x0000000008000bb8                GPIO_ResetBits
+                0x0000000008000bbc                GPIO_WriteBit
+                0x0000000008000bc8                GPIO_Write
+                0x0000000008000bcc                GPIO_ToggleBits
+                0x0000000008000bd4                GPIO_PinAFConfig
+ *(.text*)
+ .text.startup  0x0000000008000bfc       0xa4 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+                0x0000000008000bfc                main
+ *(.rodata)
+ *(.rodata*)
+ *(.glue_7)
+ .glue_7        0x0000000008000ca0        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x0000000008000ca0        0x0 linker stubs
+ *(.eh_frame)
+ *(.init)
+ *(.fini)
+                0x0000000008000ca0                . = ALIGN (0x4)
+                0x0000000008000ca0                _etext = .
+                0x0000000008000ca0                _exit = .
+
+.vfp11_veneer   0x0000000008000ca0        0x0
+ .vfp11_veneer  0x0000000008000ca0        0x0 linker stubs
+
+.v4_bx          0x0000000008000ca0        0x0
+ .v4_bx         0x0000000008000ca0        0x0 linker stubs
+
+.iplt           0x0000000008000ca0        0x0
+ .iplt          0x0000000008000ca0        0x0 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+
+.rel.dyn        0x0000000008000ca0        0x0
+ .rel.iplt      0x0000000008000ca0        0x0 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM            0x0000000008000ca0        0x0
+                0x0000000008000ca0                __exidx_start = .
+ *(.ARM.exidx*)
+                0x0000000008000ca0                __exidx_end = .
+
+.preinit_array  0x0000000008000ca0        0x0
+                0x0000000008000ca0                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array*)
+                0x0000000008000ca0                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0000000008000ca0        0x0
+                0x0000000008000ca0                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array*)
+                0x0000000008000ca0                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0000000008000ca0        0x0
+                0x0000000008000ca0                PROVIDE (__fini_array_start, .)
+ *(.fini_array*)
+ *(SORT(.fini_array.*))
+                0x0000000008000ca0                PROVIDE (__fini_array_end, .)
+                0x0000000008000ca0                __sidata = .
+
+.data           0x0000000020000000       0x24 load address 0x0000000008000ca0
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _sdata = .
+                0x0000000020000000                __data_start__ = _sdata
+ *(.data)
+ .data          0x0000000020000000       0x14 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/system_stm32f4xx.o
+                0x0000000020000000                AHBPrescTable
+                0x0000000020000010                SystemCoreClock
+ .data          0x0000000020000014       0x10 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ *(.data*)
+                0x0000000020000024                . = ALIGN (0x4)
+                0x0000000020000024                _edata = .
+                0x0000000020000024                __data_end__ = _edata
+
+.igot.plt       0x0000000020000024        0x0 load address 0x0000000008000cc4
+ .igot.plt      0x0000000020000024        0x0 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+                0x0000000020000024                . = ALIGN (0x4)
+
+.bss            0x0000000020000024        0x4 load address 0x0000000008000cc4
+                0x0000000020000024                _sbss = .
+                0x0000000020000024                __bss_start__ = _sbss
+ *(.bss)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0000000020000024        0x4 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+                0x0000000020000024                msTicks
+                0x0000000020000028                . = ALIGN (0x4)
+                0x0000000020000028                _ebss = .
+                0x0000000020000028                __bss_end__ = _ebss
+
+._user_heap_stack
+                0x0000000020000028      0x400 load address 0x0000000008000cc8
+                0x0000000020000028                . = ALIGN (0x4)
+                0x0000000020000028                PROVIDE (end, .)
+                0x0000000020000028                PROVIDE (_end, .)
+                0x0000000020000028                . = (. + _Min_Heap_Size)
+                0x0000000020000428                . = (. + _Min_Stack_Size)
+ *fill*         0x0000000020000028      0x400 
+                0x0000000020000428                . = ALIGN (0x4)
+OUTPUT(/home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/blinky.elf elf32-littlearm)
+
+.debug_info     0x0000000000000000     0x2a0e
+ .debug_info    0x0000000000000000      0x119 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+ .debug_info    0x0000000000000119      0xb31 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+ .debug_info    0x0000000000000c4a      0x133 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/stm32f4xx_it.o
+ .debug_info    0x0000000000000d7d      0x5e2 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/system_stm32f4xx.o
+ .debug_info    0x000000000000135f      0xe96 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ .debug_info    0x00000000000021f5      0x819 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+
+.debug_abbrev   0x0000000000000000      0x9dd
+ .debug_abbrev  0x0000000000000000       0xf2 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+ .debug_abbrev  0x00000000000000f2      0x2f0 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+ .debug_abbrev  0x00000000000003e2       0x67 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/stm32f4xx_it.o
+ .debug_abbrev  0x0000000000000449      0x145 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/system_stm32f4xx.o
+ .debug_abbrev  0x000000000000058e      0x257 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ .debug_abbrev  0x00000000000007e5      0x1f8 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+
+.debug_loc      0x0000000000000000     0x13e4
+ .debug_loc     0x0000000000000000       0x22 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+ .debug_loc     0x0000000000000022      0x1a1 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+ .debug_loc     0x00000000000001c3      0x144 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/system_stm32f4xx.o
+ .debug_loc     0x0000000000000307      0xd25 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ .debug_loc     0x000000000000102c      0x3b8 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+
+.debug_aranges  0x0000000000000000       0xc8
+ .debug_aranges
+                0x0000000000000000       0x20 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+ .debug_aranges
+                0x0000000000000020       0x28 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+ .debug_aranges
+                0x0000000000000048       0x20 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/stm32f4xx_it.o
+ .debug_aranges
+                0x0000000000000068       0x20 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/system_stm32f4xx.o
+ .debug_aranges
+                0x0000000000000088       0x20 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ .debug_aranges
+                0x00000000000000a8       0x20 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+
+.debug_line     0x0000000000000000      0xa9f
+ .debug_line    0x0000000000000000       0x58 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+ .debug_line    0x0000000000000058      0x277 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+ .debug_line    0x00000000000002cf       0xf9 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/stm32f4xx_it.o
+ .debug_line    0x00000000000003c8      0x19f /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/system_stm32f4xx.o
+ .debug_line    0x0000000000000567      0x2f6 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ .debug_line    0x000000000000085d      0x242 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+
+.debug_str      0x0000000000000000     0x1480
+ .debug_str     0x0000000000000000      0x133 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+                                        0x145 (size before relaxing)
+ .debug_str     0x0000000000000133      0x8d2 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+                                        0x9c5 (size before relaxing)
+ .debug_str     0x0000000000000a05       0x8f /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/stm32f4xx_it.o
+                                        0x1d0 (size before relaxing)
+ .debug_str     0x0000000000000a94      0x170 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/system_stm32f4xx.o
+                                        0x39a (size before relaxing)
+ .debug_str     0x0000000000000c04      0x728 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+                                        0x979 (size before relaxing)
+ .debug_str     0x000000000000132c      0x154 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+                                        0x4ab (size before relaxing)
+
+.comment        0x0000000000000000       0x20
+ .comment       0x0000000000000000       0x20 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+                                         0x21 (size before relaxing)
+ .comment       0x0000000000000020       0x21 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+ .comment       0x0000000000000020       0x21 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/stm32f4xx_it.o
+ .comment       0x0000000000000020       0x21 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/system_stm32f4xx.o
+ .comment       0x0000000000000020       0x21 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ .comment       0x0000000000000020       0x21 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+
+.ARM.attributes
+                0x0000000000000000       0x33
+ .ARM.attributes
+                0x0000000000000000       0x33 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+ .ARM.attributes
+                0x0000000000000033       0x33 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+ .ARM.attributes
+                0x0000000000000066       0x33 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/stm32f4xx_it.o
+ .ARM.attributes
+                0x0000000000000099       0x33 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/system_stm32f4xx.o
+ .ARM.attributes
+                0x00000000000000cc       0x33 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ .ARM.attributes
+                0x00000000000000ff       0x33 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+
+.debug_frame    0x0000000000000000      0x608
+ .debug_frame   0x0000000000000000       0x40 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+ .debug_frame   0x0000000000000040       0x70 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+ .debug_frame   0x00000000000000b0       0xa0 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/stm32f4xx_it.o
+ .debug_frame   0x0000000000000150       0x34 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/system_stm32f4xx.o
+ .debug_frame   0x0000000000000184      0x36c /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ .debug_frame   0x00000000000004f0      0x118 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+
+.debug_ranges   0x0000000000000000       0xe8
+ .debug_ranges  0x0000000000000000       0xb8 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+ .debug_ranges  0x00000000000000b8       0x18 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/system_stm32f4xx.o
+ .debug_ranges  0x00000000000000d0       0x18 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+
+Cross Reference Table
+
+Symbol                                            File
+ADC_IRQHandler                                    /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+AHBPrescTable                                     /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/system_stm32f4xx.o
+BusFault_Handler                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+CAN1_RX0_IRQHandler                               /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+CAN1_RX1_IRQHandler                               /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+CAN1_SCE_IRQHandler                               /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+CAN1_TX_IRQHandler                                /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+CAN2_RX0_IRQHandler                               /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+CAN2_RX1_IRQHandler                               /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+CAN2_SCE_IRQHandler                               /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+CAN2_TX_IRQHandler                                /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+CRYP_IRQHandler                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+DCMI_IRQHandler                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+DMA1_Stream0_IRQHandler                           /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+DMA1_Stream1_IRQHandler                           /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+DMA1_Stream2_IRQHandler                           /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+DMA1_Stream3_IRQHandler                           /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+DMA1_Stream4_IRQHandler                           /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+DMA1_Stream5_IRQHandler                           /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+DMA1_Stream6_IRQHandler                           /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+DMA1_Stream7_IRQHandler                           /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+DMA2_Stream0_IRQHandler                           /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+DMA2_Stream1_IRQHandler                           /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+DMA2_Stream2_IRQHandler                           /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+DMA2_Stream3_IRQHandler                           /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+DMA2_Stream4_IRQHandler                           /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+DMA2_Stream5_IRQHandler                           /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+DMA2_Stream6_IRQHandler                           /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+DMA2_Stream7_IRQHandler                           /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+DebugMon_Handler                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+Default_Handler                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+ETH_IRQHandler                                    /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+ETH_WKUP_IRQHandler                               /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+EXTI0_IRQHandler                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+EXTI15_10_IRQHandler                              /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+EXTI1_IRQHandler                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+EXTI2_IRQHandler                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+EXTI3_IRQHandler                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+EXTI4_IRQHandler                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+EXTI9_5_IRQHandler                                /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+FLASH_IRQHandler                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+FPU_IRQHandler                                    /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+FSMC_IRQHandler                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+GPIO_DeInit                                       /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_Init                                         /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+                                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+GPIO_PinAFConfig                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_PinLockConfig                                /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_ReadInputData                                /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_ReadInputDataBit                             /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_ReadOutputData                               /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_ReadOutputDataBit                            /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_ResetBits                                    /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_SetBits                                      /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_StructInit                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_ToggleBits                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+                                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+GPIO_Write                                        /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_WriteBit                                     /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+HASH_RNG_IRQHandler                               /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+HardFault_Handler                                 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/stm32f4xx_it.o
+                                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+I2C1_ER_IRQHandler                                /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+I2C1_EV_IRQHandler                                /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+I2C2_ER_IRQHandler                                /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+I2C2_EV_IRQHandler                                /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+I2C3_ER_IRQHandler                                /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+I2C3_EV_IRQHandler                                /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+MemManage_Handler                                 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+NMI_Handler                                       /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/stm32f4xx_it.o
+                                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+OTG_FS_IRQHandler                                 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+OTG_FS_WKUP_IRQHandler                            /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+OTG_HS_EP1_IN_IRQHandler                          /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+OTG_HS_EP1_OUT_IRQHandler                         /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+OTG_HS_IRQHandler                                 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+OTG_HS_WKUP_IRQHandler                            /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+PVD_IRQHandler                                    /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+PendSV_Handler                                    /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+RCC_AHB1PeriphClockCmd                            /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+                                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+RCC_AHB1PeriphClockLPModeCmd                      /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_AHB1PeriphResetCmd                            /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+                                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+RCC_AHB2PeriphClockCmd                            /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_AHB2PeriphClockLPModeCmd                      /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_AHB2PeriphResetCmd                            /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_AHB3PeriphClockCmd                            /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_AHB3PeriphClockLPModeCmd                      /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_AHB3PeriphResetCmd                            /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_APB1PeriphClockCmd                            /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_APB1PeriphClockLPModeCmd                      /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_APB1PeriphResetCmd                            /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_APB2PeriphClockCmd                            /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_APB2PeriphClockLPModeCmd                      /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_APB2PeriphResetCmd                            /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_AdjustHSICalibrationValue                     /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_BackupResetCmd                                /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_ClearFlag                                     /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_ClearITPendingBit                             /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_ClockSecuritySystemCmd                        /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_DeInit                                        /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_GetClocksFreq                                 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_GetFlagStatus                                 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_GetITStatus                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_GetSYSCLKSource                               /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_HCLKConfig                                    /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_HSEConfig                                     /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_HSICmd                                        /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_I2SCLKConfig                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_IRQHandler                                    /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+RCC_ITConfig                                      /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_LSEConfig                                     /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_LSICmd                                        /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_LTDCCLKDivConfig                              /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_MCO1Config                                    /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_MCO2Config                                    /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_PCLK1Config                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_PCLK2Config                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_PLLCmd                                        /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_PLLConfig                                     /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_PLLI2SCmd                                     /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_PLLI2SConfig                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_PLLSAICmd                                     /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_PLLSAIConfig                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_RTCCLKCmd                                     /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_RTCCLKConfig                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_SAIBlockACLKConfig                            /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_SAIBlockBCLKConfig                            /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_SAIPLLI2SClkDivConfig                         /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_SAIPLLSAIClkDivConfig                         /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_SYSCLKConfig                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_TIMCLKPresConfig                              /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_WaitForHSEStartUp                             /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RTC_Alarm_IRQHandler                              /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+RTC_WKUP_IRQHandler                               /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+Reset_Handler                                     /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+SDIO_IRQHandler                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+SPI1_IRQHandler                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+SPI2_IRQHandler                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+SPI3_IRQHandler                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+SVC_Handler                                       /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+SysTick_Handler                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+                                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+SystemCoreClock                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/system_stm32f4xx.o
+                                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+SystemCoreClockUpdate                             /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/system_stm32f4xx.o
+SystemInit                                        /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/system_stm32f4xx.o
+                                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+TAMP_STAMP_IRQHandler                             /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+TIM1_BRK_TIM9_IRQHandler                          /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+TIM1_CC_IRQHandler                                /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+TIM1_TRG_COM_TIM11_IRQHandler                     /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+TIM1_UP_TIM10_IRQHandler                          /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+TIM2_IRQHandler                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+TIM3_IRQHandler                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+TIM4_IRQHandler                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+TIM5_IRQHandler                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+TIM6_DAC_IRQHandler                               /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+TIM7_IRQHandler                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+TIM8_BRK_TIM12_IRQHandler                         /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+TIM8_CC_IRQHandler                                /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+TIM8_TRG_COM_TIM14_IRQHandler                     /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+TIM8_UP_TIM13_IRQHandler                          /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+UART4_IRQHandler                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+UART5_IRQHandler                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+USART1_IRQHandler                                 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+USART2_IRQHandler                                 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+USART3_IRQHandler                                 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+USART6_IRQHandler                                 /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+UsageFault_Handler                                /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+WWDG_IRQHandler                                   /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+__bss_end__                                       /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+__bss_start__                                     /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+__data_end__                                      /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+__data_start__                                    /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+__sidata                                          /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+_estack                                           /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+g_pfnVectors                                      /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+init_GPIO                                         /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+main                                              /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+                                                  /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/startup_stm32f4xx.o
+msTicks                                           /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
+setSysTick                                        /home/jssmile/STM32F4_Examples/01_GPIO/01_Paomaden/build/main.o
