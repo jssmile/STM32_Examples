@@ -10,6 +10,14 @@ Wiring connections:
 #include <stdio.h>
 #include "stm32f4xx.h"
 
+#define MAX_STRLEN 50
+volatile unsigned char received_string[MAX_STRLEN]; // this will hold the recieved string
+
+
+/*the usart acept the command from RX when RX interrupt is trigger*/
+unsigned char Receive_data;
+uint8_t Receive_String_Ready = 0;
+
 
 volatile uint32_t msTicks; /* counts 1ms timeTicks       */
 void SysTick_Handler(void) {
@@ -39,6 +47,8 @@ void setup_Periph(){
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);
 	// Enable the GPIOA clock, used by pins PA2, PA3
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
+	// Enable the GPIOD clock, used by Pin PD14
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
 
 	// Setup the GPIO pins for Tx and Rx
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2 | GPIO_Pin_3;
@@ -47,6 +57,14 @@ void setup_Periph(){
 	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
 	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
+
+	//Set up the GPIO while the data is sending
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_14;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+	GPIO_InitStructure.GPIO_Speed =GPIO_Speed_100MHz;
+	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+	GPIO_Init(GPIOD, &GPIO_InitStructure);
 
 	// Connect PA2 and PA3 with the USART2 Alternate Function
 	GPIO_PinAFConfig(GPIOA, GPIO_PinSource2, GPIO_AF_USART2);
@@ -80,18 +98,53 @@ void USART_puts(USART_TypeDef *USARTx, volatile char *str){
 	while(*str){
 		// Wait for the TC (Transmission Complete) Flag to be set
 		// while(!(USARTx->SR & 0x040));
-		while(USART_GetFlagStatus(USART2, USART_FLAG_TC) == RESET);
+		while(USART_GetFlagStatus(USART2, USART_FLAG_TXE) == RESET);
 		USART_SendData(USARTx, *str);
 		*str++;
 	}
 }
 
+//Interrupt
+void USART2_IRQHandler(void){
+	if(USART_GetITStatus(USART2, USART_IT_RXNE)){
+		GPIO_ToggleBits(GPIOD, GPIO_Pin_14);
+
+		Receive_data = USART_ReceiveData(USART2);
+		static uint8_t cnt = 0;
+
+		if(cnt < MAX_STRLEN){
+			received_string[cnt] = Receive_data;
+			if(received_string[cnt] == '\r'){
+				Receive_String_Ready = 1;
+				cnt = 0;
+			}
+
+			else{
+				cnt++;
+			}
+		}
+
+		else{
+			Receive_String_Ready = 1;
+			cnt = 0;
+		}
+		if(Receive_String_Ready){
+			USART_puts(USART2, received_string);
+			USART_puts(USART2, "\r\n");
+
+			Receive_String_Ready = 0;
+			for(int i = 0; i<MAX_STRLEN; i++){
+				received_string[i] = 0;
+			}
+		}
+	}
+}
 
 int main(void) {
 	setSysTick();
 	setup_Periph();
 
-	USART_puts(USART2, "Hello World!\n");
+	USART_puts(USART2, "Hello World!\n\r");
 
 	while(1){
 		// Nothing done here since we are using interrupts
@@ -99,6 +152,3 @@ int main(void) {
 
 	return 0;
 }
-
-
-
